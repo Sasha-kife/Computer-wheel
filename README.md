@@ -18,19 +18,20 @@
 
 <a id="chapter-1"></a>
 ## Папки
-- **libraries** - библиотеки проекта. Заменить имеющиеся версии
-- **firmware** - прошивки для Arduino
-- **schemes** - схема подключения компонентов + логика управления
 - **3D** - 3D модели
+- **feedbacks** - отзывы
+- **firmware** - прошивки для Arduino
+- **libraries** - библиотеки проекта. Заменить имеющиеся версии
+- **schemes** - схема подключения компонентов + логика управления
 
 <a id="chapter-2"></a>
 ## Схемы
 - Логика управления
   
 ![SCHEME](https://github.com/Sasha-kife/Computer-wheel/blob/main/schemes/diagram.png)
-- Схема подключения
+- Схема подключения №1
   
-![SCHEME](https://github.com/Sasha-kife/Computer-wheel/blob/main/schemes/%D0%A1%D1%85%D0%B5%D0%BC%D0%B0.jpg)
+![SCHEME](https://github.com/Sasha-kife/Computer-wheel/blob/main/schemes/scheme1.jpg)
 
 <a id="chapter-3"></a>
 ## Как скачать и прошить
