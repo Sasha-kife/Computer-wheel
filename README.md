@@ -47,7 +47,8 @@
 * Настроить IDE (COM порт, модель Arduino, как в статье выше)
 * Настроить что нужно по проекту
 * Нажать загрузить
-* Пользоваться  
+* Пользоваться
+> Для первоначальной настройки или калибровки надо сначала залить прошивку ["First_setup_or_recalibration"](https://github.com/Sasha-kife/Computer-wheel/blob/main/firmware/First%20setup%20or%20recalibration/First_setup_or_recalibration.ino), и, затем, основную прошивку ["Wheel_v1"](https://github.com/Sasha-kife/Computer-wheel/blob/main/firmware/Wheel_v1/Wheel_v1.ino) или ["Wheel_v2"](https://github.com/Sasha-kife/Computer-wheel/blob/main/firmware/Wheel_v2/Wheel_v2.ino).
 
 ## Настройки в коде
     debug = 0;            // Режим отладки (1 - вкл, 0 - выкл)
