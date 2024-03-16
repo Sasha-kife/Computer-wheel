@@ -55,8 +55,6 @@ void setup() {
   pinMode(BUTT_11, INPUT_PULLUP);
   pinMode(BUTT_12, INPUT_PULLUP);
 
-  EEPROM.put(4, 0);              // Сброс занчений из EEPROM. Нужно для повторной калибровки
-
   EEPROM.get(0, pot_th_max);     // Получение констант из EEPROM
   EEPROM.get(2, pot_br_max);
   EEPROM.get(4, count);
