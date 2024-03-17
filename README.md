@@ -32,6 +32,9 @@
 - Схема подключения №1
   
 ![SCHEME](https://github.com/Sasha-kife/Computer-wheel/blob/main/schemes/scheme1.jpg)
+- Схема подключения №2
+
+![SCHEME](https://github.com/Sasha-kife/Computer-wheel/blob/main/schemes/scheme2.jpg)
 
 <a id="chapter-3"></a>
 ## Как скачать и прошить
