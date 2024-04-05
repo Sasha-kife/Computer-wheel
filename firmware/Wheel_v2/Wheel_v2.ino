@@ -23,7 +23,7 @@ Servo servo1;
 void setup() {
   servo1.attach(serv);
 
-  count_game = 1;
+  count_game = 0;
 
   if (debug) Serial.begin(9600);
 
@@ -86,6 +86,7 @@ void loop() {
     Serial.print("Brake: ");
     Serial.print(analogRead(pot_br));
     Serial.print("; ");
+    Serial.print("Buttons: ");
     Serial.println(analogRead(BUTTONS));
   }
 
@@ -145,79 +146,79 @@ void buttons() {      // Связь с компьютером кнопок
 
   int butt_val = analogRead(BUTTONS);
 
-  if (12 <= butt_val and butt_val <= 18) Gamepad.press(1);
+  if (60 <= butt_val and butt_val <= 68) Gamepad.press(1);
   else Gamepad.release(1);
   Gamepad.write();
 
-  if (37 <= butt_val and butt_val <= 43) Gamepad.press(2);
+  if (36 <= butt_val and butt_val <= 44) Gamepad.press(2);
   else Gamepad.release(2);
   Gamepad.write();
 
-  if (61 <= butt_val and butt_val <= 67) Gamepad.press(3);
+  if (11 <= butt_val and butt_val <= 19) Gamepad.press(3);
   else Gamepad.release(3);
   Gamepad.write();
 
-  if (286 <= butt_val and butt_val <= 292) Gamepad.press(4);
+  if (285 <= butt_val and butt_val <= 293) Gamepad.press(4);
   else Gamepad.release(4);
   Gamepad.write();
 
-  if (272 <= butt_val and butt_val <= 278) Gamepad.press(5);
+  if (297 <= butt_val and butt_val <= 305) Gamepad.press(5);
   else Gamepad.release(5);
   Gamepad.write();
 
-  if (297 <= butt_val and butt_val <= 303) Gamepad.press(6);
+  if (310 <= butt_val and butt_val <= 318) Gamepad.press(6);
   else Gamepad.release(6);
   Gamepad.write();
 
-  if (310 <= butt_val and butt_val <= 316) Gamepad.press(7);
+  if (322 <= butt_val and butt_val <= 330) Gamepad.press(7);
   else Gamepad.release(7);
   Gamepad.write();
 
-  if (228 <= butt_val and butt_val <= 234) Gamepad.press(8);
+  if (144 <= butt_val and butt_val <= 152) Gamepad.press(8);
   else Gamepad.release(8);
   Gamepad.write();
 
-  if (244 <= butt_val and butt_val <= 250) Gamepad.press(9);
+  if (162 <= butt_val and butt_val <= 170) Gamepad.press(9);
   else Gamepad.release(9);
   Gamepad.write();
   
-  if (257 <= butt_val and butt_val <= 263) Gamepad.press(10);
+  if (124 <= butt_val and butt_val <= 132) Gamepad.press(10);
   else Gamepad.release(10);
   Gamepad.write();
 
-  if (180 <= butt_val and butt_val <= 186) Gamepad.press(11);
+  if (103 <= butt_val and butt_val <= 111) Gamepad.press(11);
   else Gamepad.release(11);
   Gamepad.write();
 
-  if (197 <= butt_val and butt_val <= 203) Gamepad.press(12);
+  if (244 <= butt_val and butt_val <= 252) Gamepad.press(12);
   else Gamepad.release(12);
   Gamepad.write();
 
-  if (162 <= butt_val and butt_val <= 166) Gamepad.press(13);
+  if (257 <= butt_val and butt_val <= 265) Gamepad.press(13);
   else Gamepad.release(13);
   Gamepad.write();
 
-  if (126 <= butt_val and butt_val <= 132) Gamepad.press(14);
+  if (271 <= butt_val and butt_val <= 279) Gamepad.press(14);
   else Gamepad.release(14);
   Gamepad.write();
 
-  if (105 <= butt_val and butt_val <= 111) Gamepad.press(15);
+  if (196 <= butt_val and butt_val <= 204) Gamepad.press(15);
   else Gamepad.release(15);
   Gamepad.write();
 
-  if (144 <= butt_val and butt_val <= 150) Gamepad.press(16);
+  if (212 <= butt_val and butt_val <= 220) Gamepad.press(16);
   else Gamepad.release(16);
   Gamepad.write();
 
-  if (167 <= butt_val and butt_val <= 169) Gamepad.press(17);
+  if (179 <= butt_val and butt_val <= 187) Gamepad.press(17);
   else Gamepad.release(17);
   Gamepad.write();
 
-  if (333 <= butt_val and butt_val <= 339) Gamepad.press(18);
+  if (345 <= butt_val and butt_val <= 353) Gamepad.press(18);
   else Gamepad.release(18);
   Gamepad.write();
 
-  if (322 <= butt_val and butt_val <= 328) Gamepad.press(19);
+  if (333 <= butt_val and butt_val <= 341) Gamepad.press(19);
   else Gamepad.release(19);
   Gamepad.write();
 }
