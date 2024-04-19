@@ -1,3 +1,9 @@
+/*
+  Скетч к проекту "Игровой руль для ПК на Arduino"
+  Исходники на GitHub: https://github.com/Sasha-kife/Computer-wheel/
+  Автор: Sasha-kife, 2024
+*/
+
 #include <Servo.h>         // Подключение библиотек
 #include "HID-Project.h"
 #include <EEPROM.h>
