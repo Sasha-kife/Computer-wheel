@@ -135,16 +135,16 @@ void calibrate() {    // Калибровка педалей
 
 void gamepad() {      // Связь с компьютером руля и педалей
 
-  int pot_v_w = analogRead(pot_w);
+  int pot_v_w = SredFilt();
   int pot_v_th = analogRead(pot_th);
   int pot_v_br = analogRead(pot_br);
 
-  if (pot_v_w < 510) {
+  if (pot_v_w < 507) {
     servo1.attach(serv);
     servo1.write(0);
   }
   else {
-    if (pot_v_w > 514) {
+    if (pot_v_w > 517) {
       servo1.attach(serv);
       servo1.write(360);
     }
@@ -216,4 +216,13 @@ void buttons() {      // Связь с компьютером кнопок
   if (digitalRead(BUTT_12) != HIGH) Gamepad.press(12);
   else Gamepad.release(12);
   Gamepad.write();
+}
+
+int SredFilt() {
+  int PotValForSred = 0;
+  for (int i = 0; i < 10; i++) {
+    int pot_v_w = analogRead(pot_w);
+    PotValForSred += pot_v_w;
+  }
+  return PotValForSred / 10;
 }
